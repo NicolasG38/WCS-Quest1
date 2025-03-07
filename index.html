@@ -32,9 +32,9 @@
                 </svg>
                     <nav>
                         <ul>
-                            <li>Articles</li>
-                            <li>About</li>
-                            <li>Contact</li>
+                            <a href="#articles"><li>Articles</li></a>
+                            <a href="#about"><li>About</li></a>
+                            <a href="#contact"><li>Contact</li></a>
                         </ul>
                     </nav>
             </section>    
@@ -47,7 +47,7 @@
         </header>
         <main>
             <section id="articles">
-                <section>
+                <section class="article">
                     <h2>Recent articles</h2>
                     <div>
                         <article>
@@ -68,11 +68,27 @@
                     </div>
                 </section>
             </section>
-            <section>
+            <section id="about">
                 <h2>About Us</h2>
                 <article id="about-el">
                 <p>Welcome to our web agency! We specialize in creating stunning, responsive, and user-friendly websites tailored to meet your business needs. Our team of experienced designers and developers work closely with you to bring your vision to life, ensuring that your website not only looks great but also performs flawlessly. We pride ourselves on our attention to detail and commitment to delivering high-quality solutions that drive results. Whether you need a simple landing page or a complex e-commerce platform, we have the expertise to make it happen. Let us help you establish a strong online presence and reach your target audience effectively. Contact us today to discuss your project and see how we can help you succeed in the digital world.</p>
                 </article>
+            </section>
+            <h2>Contact</h2>
+            <section id="contact">
+                <input type="text" placeholder="Nom" required>
+                <input type="text" placeholder="Prénom" required>
+                <input type="email" placeholder="Email" required>
+                <label for="text"></label>
+                <textarea id="text" placeholder="Écrivez votre message"></textarea>
+                <button type="button" id="btnsend-el">ENVOYER !</button>
+                <script>
+                    let btnSend=document.getElementById("btnsend-el")
+                    btnSend.addEventListener("click", function(){
+                       return alert("Ouups désolé 🤦🏼‍♂️, je crois que le bouton est cassé ! Je répars ça aprés mes cours de JS 😁 J'espère cette démo vous à plus. À trés vite !")
+                    })
+                </script>
+
             </section>
     </main>
     <footer>
