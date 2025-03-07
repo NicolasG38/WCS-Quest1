@@ -93,7 +93,7 @@ header section nav ul {
     /*background-color: green;*/
   }
   .avatar{
-    background-image: url('images/avatar.png');
+    background-image: url('avatar.png');
     background-size: cover;
     width: 150px;
     height:150px;
@@ -141,7 +141,7 @@ align-items: center;
 border-radius: 5px;
 }
 #responsive{
-  background-image: url('images/responsive.png');
+  background-image: url('responsive.png');
   background-size: contain;
   background-repeat: no-repeat;
   width: 200px;
@@ -149,7 +149,7 @@ border-radius: 5px;
 
   }
 #scalable{
-  background-image: url('images/scalable.png');
+  background-image: url('scalable.png');
   background-size: contain;
   background-repeat: no-repeat;
   width: 150px;
@@ -157,7 +157,7 @@ border-radius: 5px;
   padding:auto;
   }
   #inclusive{
-    background-image: url('images/inclusive.png');
+    background-image: url('inclusive.png');
     background-size: contain;
     background-repeat: no-repeat;
     width: 200px;
