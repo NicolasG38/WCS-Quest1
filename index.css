@@ -12,10 +12,7 @@ body{
     font-style: normal;
     background-color: #fff;
 }
-a{
-  text-decoration: none;
-  color: white;
-}
+
 
 header{
   display: block;
@@ -50,10 +47,11 @@ header section nav{
   margin-right: 2em;
 }
 header section nav ul {
-  display: inline-flex;
+  display: flex;
 }
-  header section nav ul li {
-    display: inline-flex;
+  header section nav ul a {
+    display: flex;
+    list-style: none;
     padding:20px;
     font-size:.85rem;
     transition:.35s;
@@ -62,13 +60,19 @@ header section nav ul {
       color: #A306B6;
       font-weight: bold;
     }
-    &:nth-child(1){
+    &:nth-child(1) {
       border-radius: 15px 0 0 15px ;
     }
     &:nth-child(3){
       border-radius: 0 15px 15px 0 ;
-
     }
+    &>a:hover{
+      color:#A306B6;
+    }
+  }
+  a{
+    text-decoration: none;
+    color: white;
   }
 
   #header-content{
@@ -78,6 +82,7 @@ header section nav ul {
   section section{
     display: flex;
     margin: auto;
+    
   }
   section section h1{
     width: 180px;
@@ -88,7 +93,7 @@ header section nav ul {
     /*background-color: green;*/
   }
   .avatar{
-    background-image: url('avatar.png');
+    background-image: url('images/avatar.png');
     background-size: cover;
     width: 150px;
     height:150px;
@@ -103,6 +108,7 @@ header section nav ul {
       transition:.35s;
     }
   }
+
 main{
     background-color: #fff;
 }
@@ -135,7 +141,7 @@ align-items: center;
 border-radius: 5px;
 }
 #responsive{
-  background-image: url('responsive.png');
+  background-image: url('images/responsive.png');
   background-size: contain;
   background-repeat: no-repeat;
   width: 200px;
@@ -143,7 +149,7 @@ border-radius: 5px;
 
   }
 #scalable{
-  background-image: url('scalable.png');
+  background-image: url('images/scalable.png');
   background-size: contain;
   background-repeat: no-repeat;
   width: 150px;
@@ -151,7 +157,7 @@ border-radius: 5px;
   padding:auto;
   }
   #inclusive{
-    background-image: url('inclusive.png');
+    background-image: url('images/inclusive.png');
     background-size: contain;
     background-repeat: no-repeat;
     width: 200px;
@@ -174,12 +180,33 @@ border-radius: 5px;
   p{
     width: 500px;
     text-align: justify;
-    margin: 30px auto;
+    margin: auto;
     line-height: 25px;
   }
-#about-el{
-    padding:0 0 100px ;
-}
+
+  #contact{
+    display: flex;
+    flex-direction: column;
+    margin: 30px auto 30px auto;
+  }
+  #contact>button{
+    margin: 10px auto;
+    padding:auto;
+    width: 100px;
+    height:40px;
+
+  }
+  input{
+    width: 500px;
+    margin:1em auto;
+    height: 3em;
+  }
+
+  textarea{
+    width: 500px;
+    height: 150px;
+    margin: auto;
+  }
 
 footer{
   background-color: #A306B6;
@@ -207,6 +234,7 @@ margin: 0 auto;
 
 }
   }
+
 footer a{
   &::before{
     content :" => "
@@ -239,8 +267,6 @@ footer a{
       width: fit-content;
     }
 
-
-
   #header-content{
       display: flex;
       flex-direction: column-reverse;
@@ -260,6 +286,6 @@ footer a{
   }
 
   p{
-      width: 400px;
+      width: 450px;
   }
 }
