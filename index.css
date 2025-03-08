@@ -285,7 +285,6 @@ footer a{
       flex-direction: column;
   }
 
-  p{
-      width: 450px;
-  }
+p, input, textarea{
+    width: 400px;
 }
