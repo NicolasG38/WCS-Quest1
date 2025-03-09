@@ -282,7 +282,7 @@ header>section>nav{
     flex-direction: column;
 }
 
-p, input, textarea{
+p,#contact>input, #contact>textarea{
     width: 400px;
 }
 
